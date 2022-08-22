@@ -5,8 +5,9 @@ let qntCarta = prompt("Qual o numero de cartas? (mínimo de 4 e máximo de 14, s
 //confirmar se o numero é par
 let par = qntCarta % 2;
 
-while(qntCarta < 4 || qntCarta > 14 || par != 0){
+while((qntCarta < 4) || (qntCarta > 14) || (par != 0)){
   qntCarta = prompt("Numero inválido de cartas, tente de novo (mínimo de 4 e máximo de 14, só numeros pares)");
+  par = qntCarta % 2;
 }
 
 const cartas = [];
